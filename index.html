@@ -7,8 +7,26 @@
     <title>Infinity Sky</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="/JS/script.js"></script>
+    <script src="/JS/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <header>
+        <h1 class="titulo">Infinity Sky</h1>
+        <h2 class="subtitulo">Astronomy Picture Of The Day!</h2>
+    </header>
+
+    <div class="container">
+        <input id="date" type="date" min="1995-06-16">
+        <button class="btn" type="button" onclick="pesquisar()">Pesquisar!</button>
+        <h3 class="titleNasa"></h3>
+        <p class="textNasa"></p>
+        <img class="imgNasa" />
+        <iframe class="videoNasa" src="" frameborder="0"></iframe>
+    </div>
+
+    <footer>
+
+    </footer>
     
 </body>
 </html>
