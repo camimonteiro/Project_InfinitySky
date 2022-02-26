@@ -35,7 +35,7 @@ function apod (){
             conteudo.css("display", "flex");
             tituloNasa.text(`Erro na busca da Api`);
             textoNasa.text(`Insira uma data entre 16 de junho de 1995 (exceto os dias 17, 18 e 19 de junho de 1995) e o dia presente!`);
-            // imagemNasa.attr("src", "");
+            imagemNasa.attr("src", "./img/page_not_found.jpg");
             imagemNasa.css("width", "150px");
             videoNasa.css("display", "none");
         },
