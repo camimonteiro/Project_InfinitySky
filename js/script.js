@@ -5,13 +5,14 @@ $(".btn").on("click", function (event) {
 
 function apod (){
     const conteudo = $(".container");
-    const data = $(#date).val();
+    const data = $("#date").val();
     const tituloNasa = $(".titleNasa");
     const textoNasa = $(".textNasa");
     const imagemNasa = $(".imgNasa");
     const videoNasa = $(".videoNasa");
 
     $.ajax ({
+        method: "GET",
         url: `https://api.nasa.gov/planetary/apod?api_key=fPYCd2Epp6jDc2uLnSnZfG1RM9Ed4q4W2YpCbxaz&date=${data}`,
 
         success: function (search) {
