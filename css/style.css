@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url("../img/richard-gatley-oxgK2f_rxDc-unsplash.jpg");
+    background-size: cover;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.credito {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.linkedin {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .linkedin:hover {
+    color:lightskyblue);
+  }
+  
+  .linkedin:visited {
+    color: lightskyblue);
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+#date, .btn {
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: white;
+    background-color:lightskyblue;
+}
+
+.titleNasa, .textNasa, .imgNasa, .videoNasa {
+    border-radius: 5px;
+    visibility: hidden;
+    width: 60%;
+    height: 100%;
+    box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.7);
+    margin: 1% 0;
+}
+
+.titleNasa, .textNasa {
+    padding: 0.5% 1%;
+}
+
+.titleNasa {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.textNasa {
+    font-size: 1rem;
+    color: white;
+}
+
+.imgNasa, .videoNasa {
+    margin-top: 0.5%;
+    width: 25%;
+    height: 35%;
+    border-radius: 4px;
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.2) 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
