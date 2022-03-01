@@ -23,15 +23,21 @@
             <h1 class="titulo">Infinity Sky</h1>
             <p class="credito">Projeto desenvolvido por <a class="linkedin" 
                 href="https://www.linkedin.com/in/camillemonteiro/">Camille Monteiro</a></p>
-            <h2 class="subtitulo">Astronomy Picture Of The Day!</h2>
+            <h2 class="subtitulo">Olha pro céu meu amô! 💫</h2>
+            <p class="explicacao">Essa é a minha versão do Astronomy Picture Of The Day (APoD) da Nasa.<br>
+                Utilizando a Api disponibilizada pela Nasa, é possível selecionar uma data abaixo (desde que seja a partir de 16/06/1995 - com excessão de 17, 18 e 19) e ver uma foto ou vídeo do céu do dia. <br>
+                Incrível né? O que você ta esperando? Olha pro céu meu amô! ✨ 🪐
+            </p>
         </header>
-
-        <div class="container">
+        <div class="pesquisa">
             <input id="date" type="date" class="input" min="1995-06-16">
             <button class="btn" type="button">Pesquisar!</button>
+        </div>
+        
+        <div class="container">
             <div class="divPai"></div>
-                <h3 class="titleNasa"></h3>
-                <p class="textNasa"></p>
+                <h3 class="titleNasa desativada"></h3>
+                <p class="textNasa desativada"></p>
                 <img class="imgNasa desativada" />
                 <iframe class="videoNasa desativada" src="" frameborder="0"></iframe>
             </div>

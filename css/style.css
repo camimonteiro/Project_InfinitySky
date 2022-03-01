@@ -13,42 +13,61 @@ html, body {
 body {
     background: url("../img/richard-gatley-oxgK2f_rxDc-unsplash.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .titulo {
     color: white;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-bottom: 10px;
+    font-size: 80px;
 }
 
 .subtitulo {
-    color: white;
+    color:khaki;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 12px;
 }
 
 .credito {
     color: white;
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .linkedin {
     text-decoration: none;
     color: white;
-    transition: 0.3s;
-  }
+}
   
-  .linkedin:hover {
-    color:lightskyblue);
-  }
+.linkedin:hover {
+    color: lightskyblue ;
+}
   
-  .linkedin:visited {
-    color: lightskyblue);
-  }
+.linkedin:visited {
+    color: lightskyblue ;
+}
+
+.explicacao {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+.pesquisa {
+   display: flex;
+   align-items: center;
+   flex-direction:row;
+   width: 100%;
+   justify-content: center;
+}
 
 .container {
     display: flex;
@@ -72,11 +91,17 @@ body {
 }
 
 .titleNasa, .textNasa, .imgNasa, .videoNasa {
-    border-radius: 5px;
     width: 60%;
     height: 100%;
-    box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.7);
-    margin: 1% 0;
+    margin: 50px 0px 20px 200px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur (15px);
 }
 
 .titleNasa, .textNasa {
@@ -86,12 +111,12 @@ body {
 .titleNasa {
     align-self: flex-start;
     font-size: 1.5rem;
-    color: white;
+    color: black;
 }
 
 .textNasa {
     font-size: 1rem;
-    color: white;
+    color: black;
 }
 
 .imgNasa, .videoNasa {
