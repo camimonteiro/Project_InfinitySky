@@ -15,13 +15,15 @@ botao.on('click', function() {
 function apod() {
     const xhr = $.ajax({
         method: 'GET',
-        url: `https://api.nasa.gov/planetary/apod?api_key=fPYCd2Epp6jDc2uLnSnZfG1RM9Ed4q4W2YpCbxaz&date=${input}`,
+        url: `https://api.nasa.gov/planetary/apod?api_key=Hz2OcFhhKiR4FNdXgRVNXbmN0OcnjoRdT3lhQ6aB&date=${input}`,
 
         // Em casop de sucesso, executa a função:
         success: function() {
             // Adiciona elementos à tela
             let titulo = $('.titleNasa').text(xhr.responseJSON.title)
+            titulo.removeClass("desativada")
             let explanation = $('.textNasa').text(xhr.responseJSON.explanation)
+            explanation.removeClass("desativada")
             console.log(xhr.responseJSON)
             // Pego media type para saber se é imagem ou vídeo
             let mediaType = xhr.responseJSON.media_type
