@@ -6,28 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Infinity Sky</title>
         <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js" defer></script>
+        <script src="./js/jquery-3.6.0.min.js" defer></script>
    
     </head>
     <body>
         <header>
             <h1 class="titulo">Infinity Sky</h1>
-            <p class="credito">Projeto desenvolvido por <a class="linkedin" href="https://www.linkedin.com/in/camillemonteiro/">Camille Monteiro</a></p>
+            <p class="credito">Projeto desenvolvido por <a class="linkedin" 
+                href="https://www.linkedin.com/in/camillemonteiro/">Camille Monteiro</a></p>
             <h2 class="subtitulo">Astronomy Picture Of The Day!</h2>
         </header>
 
         <div class="container">
-            <input id="date" type="date" min="1995-06-16">
-            <button class="btn" type="button" onclick="buscar()">Pesquisar!</button>
-            <h3 class="titleNasa"></h3>
-            <p class="textNasa"></p>
-            <img class="imgNasa" />
-            <iframe class="videoNasa" src="" frameborder="0"></iframe>
+            <input id="date" type="date" class="input" min="1995-06-16">
+            <button class="btn" type="button">Pesquisar!</button>
+            <div class="divPai"></div>
+                <h3 class="titleNasa"></h3>
+                <p class="textNasa"></p>
+                <img class="imgNasa desativada" />
+                <iframe class="videoNasa desativada" src="" frameborder="0"></iframe>
+            </div>
         </div>
-
-        <footer>
-
-        </footer>
     </body>
-    <script src="/js/script.js"></script>
-    <script src="/js/jquery-3.6.0.min.js"></script>
 </html>
