@@ -1,44 +1,52 @@
-$(".btn").on("click", function (event) {
-    event.preventDefaut();
-    apod();
-});
+const divPai = $('.divPai')
+let input = $('.input').val()
+const data = document.querySelector('.input')
 
-function apod (){
-    const conteudo = $(".container");
-    const data = $("#date").val();
-    const tituloNasa = $(".titleNasa");
-    const textoNasa = $(".textNasa");
-    const imagemNasa = $(".imgNasa");
-    const videoNasa = $(".videoNasa");
+// Função que muda a tela de acordo com a nova data
+const botao = $('.btn')
+botao.on('click', function() {
+    let valorData = data.value
+    input = valorData
+    console.log(input)
+    apod()
+})
 
-    $.ajax ({
-        method: "GET",
-        url: `https://api.nasa.gov/planetary/apod?api_key=fPYCd2Epp6jDc2uLnSnZfG1RM9Ed4q4W2YpCbxaz&date=${data}`,
+// Função para buscar os elementos
+function apod() {
+    const xhr = $.ajax({
+        method: 'GET',
+        url: `https://api.nasa.gov/planetary/apod?api_key=fPYCd2Epp6jDc2uLnSnZfG1RM9Ed4q4W2YpCbxaz&date=${input}`,
 
-        success: function (search) {
-            conteudo.css("visibility", "visible");
-            tituloNasa.text(search.title);
-            textoNasa.text(search.explanation);
+        // Em casop de sucesso, executa a função:
+        success: function() {
+            // Adiciona elementos à tela
+            let titulo = $('.titleNasa').text(xhr.responseJSON.title)
+            let explanation = $('.textNasa').text(xhr.responseJSON.explanation)
+            console.log(xhr.responseJSON)
+            // Pego media type para saber se é imagem ou vídeo
+            let mediaType = xhr.responseJSON.media_type
 
-            if (search.media_type == "image") {
-                imagemNasa.attr("src", search.url);
-                imagemNasa.css("display", "block");
-                videoNasa.css("display", "none");
+            // Pego o elemento de video e imagem
+            let img = $('.imgNasa')
+            let video = $('.videoNasa')
+
+            // Variável para segurar a url
+            let url = xhr.responseJSON.url
+
+            // Faço a comparação
+            if (mediaType == 'image') {
+                img.attr('src', url)
+
+                // Removo a classe desativada do elemento
+                img.removeClass("desativada")
+                video.addClass("desativada")
             } else {
-                videoNasa.attr("src", search.url);
-                imagemNasa.css("display", "none");
-                videoNasa.css("display", "block");
-            }
-            return search;
-        },
+                video.attr('src', url)
 
-        error: function () {
-            conteudo.css("display", "flex");
-            tituloNasa.text(`Erro na busca da Api`);
-            textoNasa.text(`Insira uma data entre 16 de junho de 1995 (exceto os dias 17, 18 e 19 de junho de 1995) e o dia presente!`);
-            imagemNasa.attr("src", "./img/page_not_found.jpg");
-            imagemNasa.css("width", "150px");
-            videoNasa.css("display", "none");
-        },
-    });
+                // Removo a classe desativada do elemento
+                video.removeClass("desativada")
+                img.addClass("desativada")
+            }
+        }
+    })
 }
