@@ -73,7 +73,6 @@ body {
 
 .titleNasa, .textNasa, .imgNasa, .videoNasa {
     border-radius: 5px;
-    visibility: hidden;
     width: 60%;
     height: 100%;
     box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.7);
@@ -101,4 +100,8 @@ body {
     height: 35%;
     border-radius: 4px;
     box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.2) 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.desativada {
+    display: none;
 }
