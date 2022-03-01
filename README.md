@@ -21,7 +21,7 @@ Esse projeto foi desenvolvido para fins educativos.</p>
 
 <h2 id="screenshots">Screenshots 📸</h2>
 
-<img src="" width="80%" height="50%"><br>
+<img src="./img/Screenshot1.png" width="80%" height="50%"><br>
 
 <img src="g" width="80%" height="50%"><br>
 
