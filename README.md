@@ -9,7 +9,7 @@
 
 <h2>Progresso do Projeto 📈</h2><br>
 
-<!-- <img src="https://raw.githubusercontent.com/camimonteiro/Cripto_PandoraBox/main/Screenshots/100%25.png" height="40em"><br> -->
+<img src="https://raw.githubusercontent.com/camimonteiro/Cripto_PandoraBox/main/Screenshots/100%25.png" height="40em"><br>
 
 <h2 id="sobre">Sobre o projeto 🔎</h2>
 <!-- <p> Olha pro céu meu amô
@@ -23,9 +23,7 @@ Esse projeto foi desenvolvido para fins educativos.</p>
 
 <img src="./img/Screenshot1.png" width="80%" height="50%"><br>
 
-<img src="g" width="80%" height="50%"><br>
-
-<img src="" width="80%" height="50%"><br>
+<img src="./img/Screenshot2.gif" width="80%" height="50%"><br>
 
 
 <h2 id="linguagens">Softwares & Ferramentas utilizadas nesse projeto 📚</h2>
